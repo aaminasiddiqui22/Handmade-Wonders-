@@ -1,4 +1,3 @@
-
 *{
 margin:0;
 padding:0;
@@ -6,51 +5,65 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Georgia, serif;
-background:#fdfaf5;
-color:#3b2d2f;
+font-family:'Poppins',sans-serif;
+background:#FCF8F2;
+color:#3E2C24;
 }
 
-header{
-background:#fff;
-padding:30px;
-text-align:center;
-border-bottom:1px solid #e6d9b8;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-header h1{
-font-size:42px;
-color:#b48a2d;
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:36px;
+font-weight:700;
+color:#C8A96A;
 }
 
-header p{
-margin-top:10px;
-font-size:18px;
-color:#777;
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
 }
 
-section{
-text-align:center;
-padding:80px 20px;
-}
-
-h2{
-font-size:38px;
-margin-bottom:20px;
-}
-
-button{
-background:#b48a2d;
-color:white;
-border:none;
-padding:15px 35px;
-font-size:18px;
-border-radius:50px;
-cursor:pointer;
+nav a{
+text-decoration:none;
+color:#3E2C24;
+font-weight:500;
 transition:.3s;
 }
 
-button:hover{
-background:#8f6c20;
-transform:scale(1.05);
+nav a:hover{
+color:#C8A96A;
 }
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.overlay{
+color:white;
+max-width:800px;
+padding:20px;
+}
+
+.overlay h1{
+font-family:'Cormorant Garamond',serif;
+fo
