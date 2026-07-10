@@ -259,3 +259,90 @@ padding:25px;
 }
 
 }
+/* ================= LONG BRIDAL VEIL ================= */
+
+.veil-showcase{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:50px;
+padding:80px 8%;
+background:#fff;
+}
+
+.veil-text{
+flex:1;
+}
+
+.tag{
+display:inline-block;
+background:#C8A96A;
+color:#fff;
+padding:8px 18px;
+border-radius:30px;
+font-size:14px;
+margin-bottom:18px;
+}
+
+.veil-text h2{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+margin-bottom:20px;
+color:#3E2C24;
+}
+
+.veil-text p{
+font-size:17px;
+color:#666;
+margin-bottom:30px;
+max-width:500px;
+}
+
+.veil-gallery{
+flex:1;
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.veil-image{
+text-align:center;
+}
+
+.veil-image img{
+width:170px;
+height:240px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.10);
+transition:.3s;
+}
+
+.veil-image img:hover{
+transform:scale(1.04);
+}
+
+.veil-image h3{
+margin-top:12px;
+font-family:'Cormorant Garamond',serif;
+font-size:24px;
+}
+
+@media(max-width:768px){
+
+.veil-showcase{
+flex-direction:column;
+text-align:center;
+}
+
+.veil-gallery{
+flex-direction:column;
+align-items:center;
+}
+
+.veil-image img{
+width:260px;
+height:auto;
+}
+
+}
