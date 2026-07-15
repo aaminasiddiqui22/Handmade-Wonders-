@@ -243,7 +243,7 @@ transform:translateY(-8px);
     width:auto;
     height:auto;
     max-height:auto;
-    object-fit:contain;
+    object-fit:center;
     display:block;
     padding:15px;
     background:#fff;
