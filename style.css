@@ -445,3 +445,12 @@ align-items:center;
 }
 
 }
+footer a{
+color:#C8A96A;
+text-decoration:none;
+font-weight:600;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
