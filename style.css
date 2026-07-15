@@ -240,9 +240,9 @@ transform:translateY(-8px);
 }
 
 .product-card img{
-    width:100%;
+    width:auto;
     height:auto;
-    max-height:420px;
+    max-height:auto;
     object-fit:contain;
     display:block;
     padding:15px;
