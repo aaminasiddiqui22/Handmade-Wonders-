@@ -240,15 +240,16 @@ transform:translateY(-8px);
 }
 
 .product-card img{
-    width:auto;
-    height:auto;
-    max-height:auto;
-    object-fit:center;
+    width:90%;
+    max-width:420px;
+    height:260px;
+    object-fit:contain;
     display:block;
-    padding:15px;
+    margin:20px auto;
+    padding:10px;
     background:#fff;
+    border-radius:12px;
 }
-
 .product-info{
 padding:28px;
 text-align:center;
