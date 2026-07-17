@@ -813,3 +813,39 @@ font-size:45px;
 display:block;
 margin-bottom:12px;
 }
+/* ===== Dual Product Images ===== */
+
+.product-card img{
+width:100%;
+display:block;
+border-radius:12px;
+}
+
+.product-images{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+.product-images img{
+width:50%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:.3s;
+cursor:pointer;
+}
+
+.product-images img:hover{
+transform:scale(1.03);
+}
+
+@media(max-width:768px){
+
+.product-images img{
+
+height:170px;
+
+}
+
+}
