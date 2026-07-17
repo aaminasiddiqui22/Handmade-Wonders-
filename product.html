@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Product | Handmade Wonders</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img src="3389d356-3b38-41b0-8003-e2a446ef5657.png">
+
+</a>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="featured">
+
+<div class="featured-image">
+
+<img id="productImage" src="" alt="Product">
+
+</div>
+
+<div class="featured-content">
+
+<span class="badge">Handmade Wonders</span>
+
+<h2 id="productName"></h2>
+
+<div class="price-box">
+
+<span class="new-price" id="productPrice"></span>
+
+</div>
+
+<p id="productDescription"></p>
+
+<a id="orderBtn" class="order-btn" target="_blank">
+
+Order on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<script>
+
+const data={
+
+whitebox:{
+name:"White Beauty Set",
+price:"₹4800",
+image:"Picsart_26-07-12_18-02-06-135.jpg",
+description:"Luxury Nikah Set including Pen, Booklet, Box, Mirror, Thumb Board and Ink Pad."
+},
+
+maroonbooklet:{
+name:"Maroon Nikah Nama Booklet",
+price:"₹1300",
+image:"maroon.jpg",
+description:"Premium handmade Nikah Nama booklet."
+}
+
+};
+
+const id=new URLSearchParams(window.location.search).get("id");
+
+const product=data[id];
+
+document.getElementById("productImage").src=product.image;
+
+document.getElementById("productName").innerHTML=product.name;
+
+document.getElementById("productPrice").innerHTML=product.price;
+
+document.getElementById("productDescription").innerHTML=product.description;
+
+document.getElementById("orderBtn").href=
+"https://wa.me/917905869506?text=I want to order "+product.name;
+
+</script>
+
+</body>
+
+</html>
