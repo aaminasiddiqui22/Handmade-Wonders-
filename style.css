@@ -849,3 +849,26 @@ height:170px;
 }
 
 }
+.product-images{
+display:flex;
+gap:12px;
+padding:20px;
+}
+
+.product-images img{
+width:50%;
+height:220px;
+object-fit:contain;
+background:#fff;
+border-radius:12px;
+border:1px solid #eee;
+padding:5px;
+}
+.product-card > img{
+width:85%;
+display:block;
+margin:20px auto;
+height:auto;
+object-fit:contain;
+border-radius:12px;
+}
